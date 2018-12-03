@@ -1,0 +1,53 @@
+/* pages/share/share.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #b3d4db;
+}
+
+.lblcls {
+  font-size: 50rpx;
+  font-weight: bold;
+  color: rgb(57, 112, 175);
+}
+
+.btncls-container {
+  height: 80rpx;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+}
+
+.btncls {
+  border: 1px solid #5695d8;
+  margin-right: 10rpx;
+  font-size: 50rpx;
+  font-weight: bold;
+  line-height: 80rpx;
+  color: rgb(57, 112, 175);
+}
+
+.itemView{
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 60px;  
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+}
+
+.input{
+  width: 120rpx;
+  height: 60rpx; 
+  border: 1px solid #5695d8;
+  color: rgb(34, 26, 26);
+  border-radius: 5px;
+}
+
+page{
+  height: 100%;
+  background-color: #b3d4db;
+}

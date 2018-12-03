@@ -1,0 +1,27 @@
+<!--pages/share/share.wxml-->
+<view class='container'>
+  <view class='itemView'>
+    <label class='lblcls'>持仓：</label>
+    <input class='input' value='{{currHave}}' type='number' bindinput='currHaveInput'></input>
+  </view>
+  <view class='itemView'>
+    <label class='lblcls'>成本：</label>
+    <input class='input' type='digit' bindinput='costInput' value='{{cost}}'></input>
+  </view>
+  <view class='itemView'>
+    <label class='lblcls'>补仓：</label>
+    <input class='input' type='number' bindinput='buyinInput' value='{{buyin}}'></input>
+  </view>
+  <view class='itemView'>
+    <label class='lblcls'>现价：</label>
+    <input class='input' type='digit' bindinput='currPriceInput' value='{{currPrice}}'></input>
+  </view>
+  <view class='itemView'>
+    <label class='lblcls'>补仓后价格：</label>
+    <input class='input' type='digit' bindinput='lastPriceInput' value='{{nowPrice}}'></input>
+  </view>
+  <view class='btncls-container'>
+    <button bindtap='btnCal' class='btncls'>计算</button>
+    <button bindtap='btnReset' class='btncls'>重置</button>
+  </view>
+</view>
