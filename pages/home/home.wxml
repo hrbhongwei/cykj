@@ -18,35 +18,35 @@
     <view class='classification white-b'>
       <view bindtap="linkBook" class='classification-jump'>
         <view class='classification-icon green-800-b'>
-          <image class="img" src="/image/icon/home1.png" />
+          <image class="img" src="/image/icon/home_book.png" />
         </view>
-        <view>读书</view>
+        <view class='menuFont'>读书</view>
       </view>
       <view bindtap="linkRun" class='classification-jump'>
         <view class='classification-icon pink-300-b'>
-          <image class="img" src="/image/icon/home2.png" />
+          <image class="img" src="/image/icon/home_run.png" />
         </view>
-        <view>跑步</view>
+        <view class='menuFont'>跑步</view>
       </view>
-      <view bindtap="linkSpeak" class='classification-jump'>
+      <!-- <view bindtap="linkSpeak" class='classification-jump'>
         <view class='classification-icon blue-200-b'>
           <image class="img" src="/image/icon/home3.png" />
         </view>
-        <view>学说话</view>
+        <view class='menuFont'>学说话</view>
       </view>
       <view bindtap="linkShare" class='classification-jump'>
         <view class='classification-icon blue-200-b'>
           <image class="img" src="/image/icon/home3.png" />
         </view>
-        <view>股票</view>
-      </view>      
+        <view class='menuFont'>股票</view>
+      </view>      -->
       <view bindtap="linkPosts" class='classification-jump'>
         <view class='classification-icon blue-200-b'>
-          <image class="img" src="/image/icon/home3.png" />
+          <image class="img" src="/image/icon/home_blog.png" />
         </view>
-        <view>博客</view>
-      </view>           
+        <view class='menuFont'>博客</view>
+      </view>            
     </view>
-    <view class='classKH'>敢做，敢想，敢拼，行动永远第一位！</view>
+    <view class='classKH'>做一个终身学习者，共勉！</view>
   </view>
 </view>
