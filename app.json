@@ -1,15 +1,16 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/share/share",    
+    "pages/share/share",
     "pages/speak/speak",
-    "pages/login/login",    
+    "pages/login/login",
     "pages/index/index",
     "pages/mine/mine",
     "pages/book/book",
     "pages/run/run",
     "pages/posts/post",
-    "pages/logs/logs"    
+    "pages/logs/logs",
+    "pages/book-create/book-create"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,4 +1,4 @@
-//app.js
+﻿//app.js
 App({
   onLaunch: function() {
     var that = this;
@@ -41,6 +41,7 @@ App({
   },
   globalData: {
     openid: 0,
+    baseUrl: 'https://webapi.cykj61.com',
     wx_url_1: 'https://api.weixin.qq.com/sns/jscode2session?appid=wxcb057c2e9adb5a5b&secret=fceba96247029dc662dbc1361021d24e&js_code=',
     wx_url_2: '&grant_type=authorization_code'
   }

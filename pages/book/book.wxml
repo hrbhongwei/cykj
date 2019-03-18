@@ -1,21 +1,31 @@
 <!--pages/books/book.wxml-->
 
 <view>
-  <button class='book-add'>
-      <view>添加</view>
+  <button class='book-add' bindtap="linkMenu">
+    <view>添加</view>
   </button>
-    <block wx:for="{{books_key}}" wx:for-item="item">
-        <view class='book-container'>
-            <text class='book-titile'>{{item.title}}</text>
-            <image class='book-image' src='{{item.book_img}}'></image>
-            <text class='book-author'>{{item.author}}</text>
-            <text class='book-content'>{{item.content}}</text>
-            <view class='book-like'>
-                <image class='book-like-image' src='{{item.author_img}}'></image>
-                <text class='book-like-font'>{{item.view_num}}</text>
-                <image class='book-like-image' src='{{item.author_img}}'></image>
-                <text class='book-like-font'>{{item.collect_num}}</text>
-            </view>
-        </view>
-    </block>
+
+  <block wx:for="{{bookInfos}}" wx:for-item="item" wx:key="item1">
+    <view class='book-container'>
+      <text class='book-titile'>{{item.name}}</text>
+      <text class='book-author'>{{item.author}} 著 - {{item.type}}</text>
+      <text class='book-content'>{{item.publishingHouse}} - {{item.edition}}</text>
+      <text class='book-content'>购买时间：{{item.buyDateTime}}</text>
+    </view>
+  </block>
+
+  <!-- <block wx:for="{{books_key}}" wx:for-item="item"  wx:key="item2">
+    <view class='book-container'>
+      <text class='book-titile'>{{item.title}}</text>
+      <image class='book-image' src='{{item.book_img}}'></image>
+      <text class='book-author'>{{item.author}}</text>
+      <text class='book-content'>{{item.content}}</text>
+      <view class='book-like'>
+        <image class='book-like-image' src='{{item.author_img}}'></image>
+        <text class='book-like-font'>{{item.view_num}}</text>
+        <image class='book-like-image' src='{{item.author_img}}'></image>
+        <text class='book-like-font'>{{item.collect_num}}</text>
+      </view>
+    </view>
+  </block> -->
 </view>

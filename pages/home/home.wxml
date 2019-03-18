@@ -20,7 +20,7 @@
         <view class='classification-icon green-800-b'>
           <image class="img" src="/image/icon/home_book.png" />
         </view>
-        <view class='menuFont'>读书</view>
+        <view cls        ass='menuFont'>读书</view>
       </view>
       <view bindtap="linkRun" class='classification-jump'>
         <view class='classification-icon pink-300-b'>

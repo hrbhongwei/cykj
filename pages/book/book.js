@@ -1,10 +1,13 @@
+var bookService = require('../../service/book-service.js');
+var appInstance = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    bookInfos: []
   },
 
   /**
@@ -51,6 +54,19 @@ Page({
    */
   onShow: function () {
     console.log("onShow");
+
+    wx.showToast({
+      title: '加载中',
+      icon: 'loading'
+    });
+
+    bookService.getBooks(undefined, undefined, 1, 99, res => {
+      this.setData({
+        bookInfos: res.items
+      });
+      wx.hideToast();
+    });
+
   },
 
   /**
@@ -86,5 +102,12 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  linkMenu: function() {
+    wx.navigateTo({
+      url: '/pages/book-create/book-create',
+    });
   }
+  
 })

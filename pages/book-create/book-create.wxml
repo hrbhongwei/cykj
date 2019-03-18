@@ -1,0 +1,47 @@
+<!--pages/book-create/book-create.wxml-->
+
+<form bindsubmit="formSubmit">
+
+  <view class="section">
+    <view class="section__title">名字</view>
+    <input name="name" placeholder="请输入名字" />
+  </view>
+
+  <view class="section">
+    <view class="section__title">作者</view>
+    <input name="author" placeholder="请输入作者" />
+  </view>
+
+  <view class="section">
+    <view class="section__title">出版社</view>
+    <input name="publishingHouse" placeholder="请输入出版社" />
+  </view>
+
+  <view class="section">
+    <view class="section__title">版本</view>
+    <input name="edition" placeholder="请输入版本" />
+  </view>
+
+  <view class="section">
+    <view class="section__title">类型</view>
+    <input name="type" placeholder="请输入类型" />
+  </view>
+
+  <view class="section">
+    <view class="section__title">语言</view>
+    <input name="language" placeholder="请输入语言" />
+  </view>
+
+  <view class="section">
+    <picker name="buyDateTime" mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+      <view class="picker">
+        购买时间
+      </view>
+      <view class="section__title">{{date}}</view>
+    </picker>
+  </view>
+
+  <view class="btn-area">
+    <button form-type="submit">提交</button>
+  </view>
+</form>
